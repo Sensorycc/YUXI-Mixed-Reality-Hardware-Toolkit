@@ -12,7 +12,7 @@ public class SpacebrewEvents : MonoBehaviour {
 
 		// register an event with the client and a callback function here.
 		// COMMON GOTCHA: THIS MUST MATCH THE NAME VALUE YOU TYPED IN THE EDITOR!!
-		sbClient.addEventListener (this.gameObject, "mystring");
+		sbClient.addEventListener (this.gameObject, "layer");
 	}
 
 	// Update is called once per frame
@@ -28,6 +28,10 @@ public class SpacebrewEvents : MonoBehaviour {
 	public void OnSpacebrewEvent(SpacebrewClient.SpacebrewMessage _msg) {
 		print ("Received Spacebrew Message");
 		print (_msg.value);
+		GameObject go = GameObject.Find ("MatrixContainer"); // the name of your client object
+		MatrixMaker grid = go.GetComponent <MatrixMaker> ();
+		grid.CreateLayer(true);
+		//grid.ParseIncomingString(_msg.value);
 	}
 
 }
