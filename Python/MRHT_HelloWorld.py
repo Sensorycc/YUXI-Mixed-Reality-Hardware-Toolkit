@@ -5,7 +5,7 @@ import time
 
 name = "MRHT_HelloWorld"
 description = "MRHT Hello World Wifi Sensor"
-server = "10.1.1.126"
+server = "raspberrypi.local"
 brew = Spacebrew(name, description=description, server=server)
 checkFrequency = 0.5
 
@@ -25,7 +25,7 @@ try:
         brew.publish('buttonPress', True)
         time.sleep(checkFrequency)
 
-except (Exception, KeyboardInterrupt) as exc:
+except (KeyboardInterrupt) as exc:
         sys.exit(exc)
 
 finally:
