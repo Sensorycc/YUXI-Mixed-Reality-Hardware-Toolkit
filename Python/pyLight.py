@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 
 # publish button press - bool
 # listen for light changes - bool
-brew = Spacebrew("PyLightMRHT", description="Python Ligth controller",  server="10.1.1.214", port=9000)
+brew = Spacebrew("MRHT_Light_Button", description="Python Light and Button controller",  server="10.1.1.214", port=9000)
 brew.addSubscriber("flipLight", "boolean")
 brew.addPublisher("buttonPress", "boolean")
 
