@@ -1,0 +1,19 @@
+This project uses the following items from Poly (http://poly.google.com):
+
+Title: Big Red Button
+Author: Jarlan Perez
+URL: https://poly.google.com/view/fgDXtV5sIGY
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Desk Lamp
+Author: Pookage Hayes
+URL: https://poly.google.com/view/0_FDq_UjWHp
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Space probe
+Author: Poly by Google
+URL: https://poly.google.com/view/fnFCCFiHbQt
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode

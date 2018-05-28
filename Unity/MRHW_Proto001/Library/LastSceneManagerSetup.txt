@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/BaseBoARd_HelloWorld.unity
+  isLoaded: 1
+  isActive: 1
