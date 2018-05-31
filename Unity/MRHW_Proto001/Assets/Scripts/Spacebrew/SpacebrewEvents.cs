@@ -6,6 +6,29 @@ public class SpacebrewEvents : MonoBehaviour {
 	SpacebrewClient sbClient;
 	bool lightState = false;
 
+/*
+
+Ok, let's do this all in one script?
+
+BaseExample: None?
+HelloWorld
+	P: None
+	S: Satellites, string
+LightsButtons
+	P: buttonPress, boolean
+	S: flipLight, boolean
+SenseHat
+	P: letter, string
+	S: direction, string
+		up,down,left,right,middle (default)
+	S: layer, string
+
+p:2
+s:4
+
+ */
+
+
 	// Use this for initialization
 	void Start () {
 		GameObject go = GameObject.Find ("SpacebrewObject"); // the name of your client object
@@ -32,7 +55,7 @@ public class SpacebrewEvents : MonoBehaviour {
 	public void OnSpacebrewEvent(SpacebrewClient.SpacebrewMessage _msg) {
 		print ("Received Spacebrew Message");
 		print (_msg.value);
-		GameObject go = GameObject.Find("BaseBoARd/Lamp/SpacebrewSpotlight");
+		GameObject go = GameObject.Find("BaseBoARd/YourObjectsGoHere/Lamp/SpacebrewSpotlight");
 		print(go);
 		if (_msg.value == "true") {
 			lightState = !lightState;
