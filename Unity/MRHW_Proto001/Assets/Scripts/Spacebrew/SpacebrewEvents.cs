@@ -38,6 +38,7 @@ s:4
 		// COMMON GOTCHA: THIS MUST MATCH THE NAME VALUE YOU TYPED IN THE EDITOR!!
 		sbClient.addEventListener (this.gameObject, "launchSatellite");
 		sbClient.addEventListener (this.gameObject, "lightOn");
+		sbClient.addEventListener (this.gameObject, "letters");
 	}
 
 	// Update is called once per frame
@@ -48,6 +49,19 @@ s:4
 			// COMMON GOTCHA: THIS MUST MATCH THE NAME VALUE YOU TYPED IN THE EDITOR!!
 			sbClient.sendMessage("buttonPress", "boolean", "true");
 		}
+		foreach (char c in Input.inputString) {
+			print("Just pressed: "+c.ToString());
+			if (c >= 'a' && c <= 'z') {
+				sbClient.sendMessage("letters", "string", c.ToString());
+				GameObject go = GameObject.Find ("MatrixContainer"); // the name of your client object
+				MatrixMaker grid = go.GetComponent <MatrixMaker> ();
+				grid.ParseIncomingLetter(c.ToString());
+				grid.delayLayer();
+				//grid.CreateLayer(true);
+				
+			}
+		}
+
 		if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
 			sbClient.sendMessage("buttonPress", "boolean", "true");
 		}
@@ -57,7 +71,7 @@ s:4
 
 
 		print ("Received Spacebrew Message");
-		print (_msg.name);
+		print (_msg);
 
 		// Look for incoming Satellite messages
 		if (_msg.name == "launchSatellite") {
@@ -70,6 +84,14 @@ s:4
 		}
 
 		// Look for messages to turn the virtual lamp light on
+		if (_msg.name == "letters") {
+			GameObject go = GameObject.Find ("MatrixContainer"); // the name of your client object
+			MatrixMaker grid = go.GetComponent <MatrixMaker> ();
+			grid.ParseIncomingLetter(_msg.value[0].ToString());
+			grid.delayLayer();
+		}
+
+		// Look for messages to turn the virtual lamp light on
 		if (_msg.name == "lightOn") {
 			//print(go);
 			if (_msg.value == "true") {
@@ -78,6 +100,12 @@ s:4
 				go.gameObject.SetActive(lightState);
 			}
 		}
+
+
+
+		//if (_msg.name == "letters") {
+		//print(go);
+		//if (_msg.value == "true") {
 		// GameObject go = GameObject.Find ("MatrixContainer"); // the name of your client object
 		// MatrixMaker grid = go.GetComponent <MatrixMaker> ();
 		// grid.CreateLayer(true);

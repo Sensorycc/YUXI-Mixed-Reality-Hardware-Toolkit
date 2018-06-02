@@ -17,6 +17,26 @@ public class MatrixMaker : MonoBehaviour {
 	private int numberLayers;
 	private string [] pixelArray;
 	private string testString = "0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 0 0 1 1 1 1 1 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0";
+	public Vector3 offsetLocation;
+	public Vector3 offsetScale;
+
+	private string led_e = @"0 0 0 0 0 0 0 0 
+							0 0 0 0 0 0 0 0 
+							0 0 0 0 0 0 0 0 
+							0 0 1 1 1 0 0 0 
+							0 1 0 0 0 1 0 0 
+							0 1 1 1 1 0 0 0 
+							0 1 0 0 0 0 0 0 
+							0 0 1 1 1 0 0 0";
+
+	private string led_h = @"0 0 0 0 0 0 0 0 
+							0 1 0 0 0 0 0 0 
+							0 1 0 0 0 0 0 0 
+							0 1 0 1 1 0 0 0 
+							0 1 1 0 0 1 0 0 
+							0 1 0 0 0 1 0 0 
+							0 1 0 0 0 1 0 0 
+							0 1 0 0 0 1 0 0";
 
 	public class GridLayer : MonoBehaviour {
 		List<GridObject> layerObjects = new List<GridObject>();
@@ -98,14 +118,14 @@ public class MatrixMaker : MonoBehaviour {
 		numberLayers = 0;
 		ParseIncomingString(testString);
 		container = gameObject;
-		CreateLayer(false); // Create one to start alignment and don't animate until we start getting spacebrew messages
+		//CreateLayer(); // Create one to start alignment and don't animate until we start getting spacebrew messages
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("space")) {
-			CreateLayer(true);
+			CreateLayer();
 			print ("Creating Layer");
 		}
 
@@ -121,7 +141,12 @@ public class MatrixMaker : MonoBehaviour {
 		}
 	}
 
-	public void CreateLayer(bool _isAnimated) {
+	public void delayLayer() {
+		Invoke("CreateLayer", 1);
+	}
+
+	public void CreateLayer() {
+		
 		// Create the layer 
 		containerObject = new GameObject("layer" + numberLayers);
 		//print("THERE ARE: " + numberLayers + " LAYERS.");
@@ -131,8 +156,10 @@ public class MatrixMaker : MonoBehaviour {
 		containerObject.transform.position = container.transform.position;
 
 		// Set the exact offset location
-		containerObject.transform.localPosition = new Vector3(-1.0f,0,0.2f);;
-
+		containerObject.transform.localRotation = Quaternion.Euler(new Vector3(0.0f, 90.0f, 0.0f));
+		containerObject.transform.localPosition = offsetLocation; //new Vector3(-1.0f,0,0.2f);
+		containerObject.transform.localScale = offsetScale;
+		
 		//Debug.Log("Called from this object: " +containerObject);
 		//containerObject.transform.localPosition = new Vector3(-2.0f,0,0.2f);
 
@@ -140,18 +167,46 @@ public class MatrixMaker : MonoBehaviour {
 		GridLayer cO = containerObject.GetComponent(typeof(GridLayer)) as GridLayer;
 		cO.setGrid(pixelArray);
 		cO.Initialize(numberLayers,containerObject,gridObject,8,8);
+		cO.isAnimating = true;
+		/* 
 		if (_isAnimated == true) {
 			cO.isAnimating = true;
 		} else {
 			cO.isAnimating = false;
 		}
-		
+		*/
+
 		// Add the layer to a list
 		//GridLayer tG = new GridLayer();
 		//tG.Initialize(containerObject,gridObject,8,8);
 		gridLayers.Add(containerObject);
 		numberLayers++; // Keep track of how many layers we have made
 	}
+
+	public void ParseIncomingLetter(string _val) {
+		switch (_val) {
+			case "h":
+				pixelArray = led_h.Split(' ');
+				break;
+			case "e":
+				pixelArray = led_e.Split(' ');
+				break;
+			default:
+				pixelArray = testString.Split(' ');
+				break;
+		}
+	    
+		
+		print("Letter: "+ _val);
+	}
+
+	// IEnumerator DelayLayer()
+    // {
+    //     print(Time.time);
+    //     yield return new WaitForSeconds(1.5f);
+    //     print(Time.time);
+
+    // }
 
 	public void ParseIncomingString(string _val) {
 		pixelArray = _val.Split(' '); 
