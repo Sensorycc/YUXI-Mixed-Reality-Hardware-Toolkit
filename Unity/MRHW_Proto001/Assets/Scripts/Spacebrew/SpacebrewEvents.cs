@@ -53,10 +53,14 @@ s:4
 	}
 
 	public void OnSpacebrewEvent(SpacebrewClient.SpacebrewMessage _msg) {
+
+
 		print ("Received Spacebrew Message");
-		print (_msg.value);
+		print (_msg);
+
+		
 		GameObject go = GameObject.Find("BaseBoARd/YourObjectsGoHere/Lamp/SpacebrewSpotlight");
-		print(go);
+		//print(go);
 		if (_msg.value == "true") {
 			lightState = !lightState;
 			go.gameObject.SetActive(lightState);

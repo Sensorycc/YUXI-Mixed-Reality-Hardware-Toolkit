@@ -6,9 +6,27 @@ URL: https://poly.google.com/view/fgDXtV5sIGY
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Billboard
+Author: Poly by Google
+URL: https://poly.google.com/view/1hWn_idGeuT
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Button
+Author: Poly by Google
+URL: https://poly.google.com/view/78m5QJIlj5p
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Desk Lamp
 Author: Pookage Hayes
 URL: https://poly.google.com/view/0_FDq_UjWHp
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Satellite
+Author: Poly by Google
+URL: https://poly.google.com/view/2i9NPgZ-ALP
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
