@@ -13,7 +13,7 @@ Ok, let's do this all in one script?
 BaseExample: None?
 HelloWorld
 	P: None
-	S: Satellites, string
+	S: launchSatellite, string
 LightsButtons
 	P: buttonPress, boolean
 	S: flipLight, boolean
@@ -36,7 +36,8 @@ s:4
 
 		// register an event with the client and a callback function here.
 		// COMMON GOTCHA: THIS MUST MATCH THE NAME VALUE YOU TYPED IN THE EDITOR!!
-		sbClient.addEventListener (this.gameObject, "layer");
+		sbClient.addEventListener (this.gameObject, "launchSatellite");
+		sbClient.addEventListener (this.gameObject, "lightOn");
 	}
 
 	// Update is called once per frame
@@ -56,14 +57,26 @@ s:4
 
 
 		print ("Received Spacebrew Message");
-		print (_msg);
+		print (_msg.name);
 
-		
-		GameObject go = GameObject.Find("BaseBoARd/YourObjectsGoHere/Lamp/SpacebrewSpotlight");
-		//print(go);
-		if (_msg.value == "true") {
-			lightState = !lightState;
-			go.gameObject.SetActive(lightState);
+		// Look for incoming Satellite messages
+		if (_msg.name == "launchSatellite") {
+			if (_msg.value == "true") {
+				GameObject go = GameObject.Find("BaseBoARd/YourObjectsGoHere/CenterOfUniverse");
+				OrbitManager om = go.GetComponent <OrbitManager> ();
+				om.makeSatellite();
+				print("Tried to launch Satellite");
+			}
+		}
+
+		// Look for messages to turn the virtual lamp light on
+		if (_msg.name == "lightOn") {
+			//print(go);
+			if (_msg.value == "true") {
+				GameObject go = GameObject.Find("BaseBoARd/YourObjectsGoHere/Lamp/SpacebrewSpotlight");
+				lightState = !lightState;
+				go.gameObject.SetActive(lightState);
+			}
 		}
 		// GameObject go = GameObject.Find ("MatrixContainer"); // the name of your client object
 		// MatrixMaker grid = go.GetComponent <MatrixMaker> ();

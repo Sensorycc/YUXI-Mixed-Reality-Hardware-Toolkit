@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4036016891251318}
   - component: {fileID: 114054069118515328}
+  - component: {fileID: 114286901487107694}
   m_Layer: 0
   m_Name: Satellite_Poly_by_Google_2i9NPgZ_ALP
   m_TagString: Untagged
@@ -133,14 +134,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627047030096994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.111423135, y: 0.9177645, z: -0.23261079, w: -0.3019694}
+  m_LocalPosition: {x: -0.488, y: 0.354, z: -0.027}
+  m_LocalScale: {x: 0.0003, y: 0.0003, z: 0.0003}
   m_Children:
   - {fileID: 4816213008941532}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 21.08, y: 220.51, z: 21.7}
 --- !u!4 &4178805080184906
 Transform:
   m_ObjectHideFlags: 1
@@ -441,3 +442,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asset: {fileID: 11400000, guid: 9977b1c841c2b40cd926794371d052a5, type: 2}
+--- !u!114 &114286901487107694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627047030096994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa7651fdfb2641fcb7a9028925f4971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerObject: {fileID: 0}
+  speed: 100
