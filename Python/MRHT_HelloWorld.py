@@ -7,8 +7,9 @@ from pySpacebrew.spacebrew import Spacebrew
 
 # publish button press - bool
 # listen for light changes - bool
-brew = Spacebrew("MRHT_HelloWorld", description="Animate some wifi networks",  server="10.1.1.214", port=9000)
+brew = Spacebrew("MRHT_HelloWorld", description="Animate some wifi networks",  server="10.0.1.7", port=9000)
 #brew.addSubscriber("satellite", "string")
+brew.addPublisher("networkEvent", "boolean");
 brew.addPublisher("wifi", "string")
 connected = False
 
@@ -46,6 +47,7 @@ try:
             currentWifi = wifiNetworks[CURR_INDEX] #wifiNetworks[0]
             # currentWifi = "The Griffith Guest"
             brew.publish('wifi', currentWifi)
+	    brew.publish('networkEvent',  True);
         connected = True
         time.sleep(CHECK_FREQ)
 
