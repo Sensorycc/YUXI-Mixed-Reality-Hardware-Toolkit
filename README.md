@@ -1,6 +1,6 @@
-# Mixed-Reality-Hardware-Toolkit
+# YUXI: The Mixed Reality Hardware Toolkit
 
-The MRHT has 3 example projects that it comes with and there are many more that have been documented on the <a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
+YUXI has 3 example projects that it comes with and there are many more that have been documented on the <a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
 
 Example 1: Hello World
 
