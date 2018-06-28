@@ -4,9 +4,7 @@ YUXI has 3 example projects that it comes with and there are many more that have
 
 Example 1: Hello World
 
-![YUXI Hello World](https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif)
-
-<img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width=100%">
+<img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width="900">
                                                                                                                                            
 Example 2: Lights and Buttons
 
