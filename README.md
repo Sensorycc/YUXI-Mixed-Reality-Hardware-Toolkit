@@ -1,16 +1,19 @@
 # YUXI: The Mixed Reality Hardware Toolkit
 
+The original inspiration behind YUXI was to create a set of methodologies, toolchains, and examples to mix physical computing with VR/AR/MR projects. The project examples currently a Raspberry Pi and breadboard mounted to a trackable base plate. From there we use <a href="http://www.spacebrew.cc">Spacebrew</a> to connect the inputs and outputs to Unity. 
+
+[Getting Started](Getting_Started.md)
+
 YUXI has 3 example projects that it comes with and there are many more that have been documented on the <a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
 
-Example 1: Hello World
-
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width="900">
-                                                                                                                                           
-Example 2: Lights and Buttons
-<img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
+## Example 1: Hello World
 
-Example 3: SenseHat Letters
+<img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
+## Example 2: Lights and Buttons
+
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_SenseHat.gif" width="900">
+## Example 3: SenseHat Letters
 
 * [Controlling a Power Relay from Mixed Reality](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Powering-any-device-on-and-off-using-Raspberry-Pi,-SpaceBrew-and-Mixed-Reality)
 * [Connecting a Motorized Slide Pot to Spacebrew and Unity](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-Motorized-Slide-Pot-to-Spacebrew-and-Unity)
