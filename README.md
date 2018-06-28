@@ -16,7 +16,7 @@ This project creates the connection between the Python script on the Rapsberry P
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
 
 ## Example 2: Lights and Buttons
-Using a breadboard to connect a button and an LED light, this example has identical Spacebrew publishers and subscribers 
+Using a breadboard to connect a button and an LED light, this example has identical Spacebrew publishers and subscribers in the 'physical' and 'virtual' side of the project. Both the Unity and Python side publish button pressed events and subscribe to a toggle light event. On their own, pushing the button will not perform any action. However you can route the physical button to either the physical or virtual light in order to control it. When deployed on an iOS device you can tap the virtual button on the screen to control the lights.  
 
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_SenseHat.gif" width="900">
 
