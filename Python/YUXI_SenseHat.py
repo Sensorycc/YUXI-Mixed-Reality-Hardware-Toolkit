@@ -16,7 +16,7 @@ from pySpacebrew.spacebrew import Spacebrew
 from sense_hat import SenseHat
 
 # Setup Spacebrew with Publishers and Subscribers
-brew = Spacebrew("MRHT_SenseHat", description="Joystick and LED letters",  server="ciidspacebrew.local", port=9000)
+brew = Spacebrew("YUXI_SenseHat", description="Joystick and LED letters",  server="ciidspacebrew.local", port=9000)
 brew.addSubscriber("letters", "string")
 brew.addPublisher("joystick", "string")
 
