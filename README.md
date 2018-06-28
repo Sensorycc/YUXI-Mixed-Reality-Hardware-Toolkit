@@ -21,3 +21,5 @@ Example 3: SenseHat Letters
 * [Cat and Mouse: with a motorized slide pot](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-motorized-slide-pot-to-Unity-via-Spacebrew)
 
 Documentation here: https://www.sensory.cc/mrht
+
+YUXI has primarily been created by JOSHUA WALTON and JAMES TICHENOR, with the help of the the CIID IDP Class of 2018: FAHMIDA AZAD, ANNA SMERAGLIUOLO, ALEX PENMAN, MANTAS LILIS, ABHISHEK KUMAR, JULIANA LEWIS, FEDERICO PELITI, JING YU, RINA SHUMYLO, JULIUS INGEMANN BREITENSTEIN, MICOL GALEOTTI, REUBEN JEROME DSILVA, SAMI DÉSIR, SAREENA AVADHANY, SHALIN SHAH, SINDHUMANDARI, SUROJIT DEY, YUXI LIU, CHAERI BONG, AXEL JORGENSEN, RAPHAEL KATZ, RAUNAQ PATEL, UBALDO ANDREA DESIATO, VARENYA RAJ
