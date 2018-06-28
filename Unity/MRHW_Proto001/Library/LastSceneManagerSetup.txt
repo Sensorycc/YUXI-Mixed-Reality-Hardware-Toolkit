@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/BaseBoARd_LightsButtons.unity
-  isLoaded: 1
-  isActive: 1
