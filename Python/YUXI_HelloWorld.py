@@ -13,7 +13,7 @@ from pySpacebrew.spacebrew import Spacebrew
 
 
 # Setup Spacebrew for Publishing
-brew = Spacebrew("MRHT_HelloWorld", description="Animate some wifi networks",  server="ciidspacebrew.local", port=9000)
+brew = Spacebrew("YUXI_HelloWorld", description="Animate some wifi networks",  server="ciidspacebrew.local", port=9000)
 brew.addPublisher("networkEvent", "boolean");
 brew.addPublisher("wifi", "string")
 connected = False

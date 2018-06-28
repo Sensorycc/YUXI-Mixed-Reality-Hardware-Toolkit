@@ -15,7 +15,7 @@ from pySpacebrew.spacebrew import Spacebrew
 import RPi.GPIO as GPIO
 
 # Setup Spacebrew with Publishers and Subscribers
-brew = Spacebrew("MRHT_Light_Button", description="Python Light and Button controller",  server="ciidspacebrew.local", port=9000)
+brew = Spacebrew("YUXI_Light_Button", description="Python Light and Button controller",  server="ciidspacebrew.local", port=9000)
 brew.addSubscriber("flipLight", "boolean")
 brew.addPublisher("buttonPress", "boolean")
 
