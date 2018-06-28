@@ -7,6 +7,7 @@ Example 1: Hello World
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width="900">
                                                                                                                                            
 Example 2: Lights and Buttons
+<img src="ttps://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
 
 Example 3: SenseHat Letters
 
