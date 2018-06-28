@@ -38,6 +38,8 @@ sysinfo.txt
 # ============ #
 .DS_Store
 .DS_Store?
+.AppleDouble
+.AppleDouble?
 ._*
 .Spotlight-V100
 .Trashes
