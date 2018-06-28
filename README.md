@@ -10,6 +10,7 @@ Example 2: Lights and Buttons
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
 
 Example 3: SenseHat Letters
+<img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_SenseHat.gif" width="900">
 
 * [Controlling a Power Relay from Mixed Reality](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Powering-any-device-on-and-off-using-Raspberry-Pi,-SpaceBrew-and-Mixed-Reality)
 * [Connecting a Motorized Slide Pot to Spacebrew and Unity](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-Motorized-Slide-Pot-to-Spacebrew-and-Unity)
