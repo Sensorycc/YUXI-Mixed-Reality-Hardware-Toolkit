@@ -7,12 +7,19 @@ The original inspiration behind YUXI was to create a set of methodologies, toolc
 YUXI has 3 example projects that it comes with and there are many more that have been documented on the <a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
 
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width="900">
+
+
 ## Example 1: Hello World
+This project creates the connection between the Python script on the Rapsberry Pi which publishes the wifi routers which it sees on its network and sends them to Spacebrew. The Unity side animates satellites for each incoming message. When connected the Python script will send each new Wifi Router to animate as a satellite in Unity. There is no need to connect additional hardware to the Raspberry Pi for this example to work. 
+
 
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Lights_Buttons.gif" width="900">
+
 ## Example 2: Lights and Buttons
+Using a breadboard to connect a button and an LED light, this example has identical Spacebrew publishers and subscribers 
 
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_SenseHat.gif" width="900">
+
 ## Example 3: SenseHat Letters
 
 * [Controlling a Power Relay from Mixed Reality](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Powering-any-device-on-and-off-using-Raspberry-Pi,-SpaceBrew-and-Mixed-Reality)
