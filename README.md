@@ -21,6 +21,9 @@ Using a breadboard to connect a button and an LED light, this example has identi
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_SenseHat.gif" width="900">
 
 ## Example 3: SenseHat Letters
+This example require connecting a SenseHat shield to the Raspberry Pi. The Python side of this example can listen for letters sent to it and display them on the LED matrix. Joystick directional presses are published from the board. On the Unity side letters can be sent to animate as a set of voxels, floating off into space. When routed together letter sent are shown on the LED matrix and then transfer to the augmented voxel space. 
+
+Additional In-Progress Tutorials:
 
 * [Controlling a Power Relay from Mixed Reality](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Powering-any-device-on-and-off-using-Raspberry-Pi,-SpaceBrew-and-Mixed-Reality)
 * [Connecting a Motorized Slide Pot to Spacebrew and Unity](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-Motorized-Slide-Pot-to-Spacebrew-and-Unity)
@@ -36,4 +39,4 @@ Using a breadboard to connect a button and an LED light, this example has identi
 
 Documentation here: https://www.sensory.cc/mrht
 
-YUXI has primarily been created by JOSHUA WALTON and JAMES TICHENOR, with the help of the the CIID IDP Class of 2018: FAHMIDA AZAD, ANNA SMERAGLIUOLO, ALEX PENMAN, MANTAS LILIS, ABHISHEK KUMAR, JULIANA LEWIS, FEDERICO PELITI, JING YU, RINA SHUMYLO, JULIUS INGEMANN BREITENSTEIN, MICOL GALEOTTI, REUBEN JEROME DSILVA, SAMI DÉSIR, SAREENA AVADHANY, SHALIN SHAH, SINDHUMANDARI, SUROJIT DEY, YUXI LIU, CHAERI BONG, AXEL JORGENSEN, RAPHAEL KATZ, RAUNAQ PATEL, UBALDO ANDREA DESIATO, VARENYA RAJ
+YUXI has primarily been created by Joshua Walton and James Tichenor, with the help of the the CIID IDP Class of 2018: Fahmida Azad, Anna Smeraglioulo, Alex Penman, Mantas Lilis, Abhishek Kumar, Juliana Lewis, Federico Peliti, Jing Yu, Rina Shumylo, Julius Ingemann Breitstein, Micol Galeotti, Reuben Jerome Dsilva, Sami Desir, Sareena Avadhany, Shalin Shad, Sindhumandari, Surojit Dey, Yuxi Liu (where the project gets its name), Chaeri Bong, Axel Jorgensen, Raphael Katz, Raunaq Patel, Ubaldo Andrea Desiato, Varenya Raj
