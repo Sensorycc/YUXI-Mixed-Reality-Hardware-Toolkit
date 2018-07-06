@@ -65,6 +65,11 @@ s:4
 		if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
 			sbClient.sendMessage("buttonPress", "boolean", "true");
 		}
+		if(Input.GetMouseButtonDown(0)){
+			sbClient.sendMessage("buttonPress", "boolean", "true");
+		}
+
+		
 	}
 
 	public void OnSpacebrewEvent(SpacebrewClient.SpacebrewMessage _msg) {
