@@ -37,6 +37,6 @@ Additional In-Progress Tutorials:
 * [Servos Control a Virtual Marble](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Servos-Control-a-Virtual-Marble)
 * [Cat and Mouse: with a motorized slide pot](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-motorized-slide-pot-to-Unity-via-Spacebrew)
 
-Documentation here: https://www.sensory.cc/mrht
+Documentation here: https://www.sensory.cc/yuxi
 
 YUXI has primarily been created by Joshua Walton and James Tichenor, with the help of the the CIID IDP Class of 2018: Fahmida Azad, Anna Smeraglioulo, Alex Penman, Mantas Lilis, Abhishek Kumar, Juliana Lewis, Federico Peliti, Jing Yu, Rina Shumylo, Julius Ingemann Breitstein, Micol Galeotti, Reuben Jerome Dsilva, Sami Desir, Sareena Avadhany, Shalin Shad, Sindhumandari, Surojit Dey, Yuxi Liu (where the project gets its name), Chaeri Bong, Axel Jorgensen, Raphael Katz, Raunaq Patel, Ubaldo Andrea Desiato, Varenya Raj
