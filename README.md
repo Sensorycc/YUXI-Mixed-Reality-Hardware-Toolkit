@@ -38,8 +38,6 @@ Additional In-Progress Tutorials:
 * [Cat and Mouse: with a motorized slide pot](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-motorized-slide-pot-to-Unity-via-Spacebrew)
 
 
-writing some stuff here
-and some more stuff here.
 
 Documentation here: https://www.sensory.cc/yuxi
 
