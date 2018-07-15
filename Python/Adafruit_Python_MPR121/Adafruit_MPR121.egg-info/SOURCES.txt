@@ -1,0 +1,8 @@
+setup.py
+Adafruit_MPR121/MPR121.py
+Adafruit_MPR121/__init__.py
+Adafruit_MPR121.egg-info/PKG-INFO
+Adafruit_MPR121.egg-info/SOURCES.txt
+Adafruit_MPR121.egg-info/dependency_links.txt
+Adafruit_MPR121.egg-info/requires.txt
+Adafruit_MPR121.egg-info/top_level.txt
