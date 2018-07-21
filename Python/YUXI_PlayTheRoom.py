@@ -1,3 +1,4 @@
+
 ##############################################################
 # YUXI Play The Room 2018 Sensory cc
 # Author: James Tichenor
@@ -11,31 +12,36 @@ import sys
 import time
 import subprocess
 from pySpacebrew.spacebrew import Spacebrew
-
+import socket
 import Adafruit_MPR121.MPR121 as MPR121
+from uuid import getnode as get_mac
+
+time.sleep(10)
 
 print('YUXI Play The Room')
+
+mac = get_mac()
+macString = ':'.join(("%012X" % mac)[i:i+2] for i in range(0, 12, 2))
+
+def get_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        # doesn't even have to be reachable
+        s.connect(('10.255.255.255', 1))
+        IP = s.getsockname()[0]
+    except:
+        IP = '127.0.0.1'
+    finally:
+        s.close()
+    return IP 
 
 # Create MPR121 instance.
 cap = MPR121.MPR121()
 
 # Setup Spacebrew for Publishing
-brew = Spacebrew("YUXI_PlayTheRoom", description="capacitiveSwitches",  server="sandbox.spacebrew.cc", port=9000)
+brew = Spacebrew("YUXI_PlayTheRoom : " + macString[-5:], description='[ capacitiveSwitches ] [local ip' + get_ip() + '] [MAC Address ' + macString + '] ',  server="sandbox.spacebrew.cc", port=9000)
 for i in range (12):
     brew.addPublisher('P{0}'.format(i),'boolean')
-#note
-#brew.addPublisher("P0", "boolean");
-#brew.addPublisher("P1", "boolean");
-#brew.addPublisher("P2", "boolean");
-#brew.addPublisher("P3", "boolean");
-#brew.addPublisher("P4", "boolean");
-#brew.addPublisher("P5", "boolean");
-#brew.addPublisher("P6", "boolean");
-#brew.addPublisher("P7", "boolean");
-#brew.addPublisher("P8", "boolean");
-#brew.addPublisher("P9", "boolean");
-#brew.addPublisher("P10", "boolean");
-#brew.addPublisher("P11", "boolean");
 connected = False
 
 # Initialize communication with MPR121 using default I2C bus of device, and
@@ -79,6 +85,7 @@ try:
         time.sleep(0.1)
 finally:
     brew.stop()
+    
 ##############################################################
 # Orignial Adaruit licnece
 
