@@ -25,7 +25,7 @@ Using a breadboard to connect a button and an LED light, this example has identi
 ## Example 3: SenseHat Letters
 This example require connecting a SenseHat shield to the Raspberry Pi. The Python side of this example can listen for letters sent to it and display them on the LED matrix. Joystick directional presses are published from the board. On the Unity side letters can be sent to animate as a set of voxels, floating off into space. When routed together letter sent are shown on the LED matrix and then transfer to the augmented voxel space. 
 
-Additional In-Progress Tutorials:
+## Additional Tutorials:
 
 * [Connecting YUXI to a Power Relay](https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/wiki/Connecting-XR-to-a-Power-Relay)
 * [Connecting a Motorized Slide Pot to Spacebrew and Unity](https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki/Connecting-a-Motorized-Slide-Pot-to-Spacebrew-and-Unity)
@@ -41,6 +41,8 @@ Additional In-Progress Tutorials:
 
 
 
-Documentation here: https://www.sensory.cc/yuxi
+## Documentation 
+https://www.sensory.cc/yuxi
 
+## About
 _YUXI has primarily been created by Joshua Walton and James Tichenor, with the help of the the CIID IDP Class of 2018: Fahmida Azad, Anna Smeraglioulo, Alex Penman, Mantas Lilis, Abhishek Kumar, Juliana Lewis, Federico Peliti, Jing Yu, Rina Shumylo, Julius Ingemann Breitstein, Micol Galeotti, Reuben Jerome Dsilva, Sami Desir, Sareena Avadhany, Shalin Shad, Sindhumandari, Surojit Dey, Yuxi Liu (where the project gets its name), Chaeri Bong, Axel Jorgensen, Raphael Katz, Raunaq Patel, Ubaldo Andrea Desiato, Varenya Raj_
