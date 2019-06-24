@@ -4,7 +4,8 @@ The original inspiration behind YUXI was to create a set of methodologies, toolc
 
 [Getting Started](https://www.sensory.cc/yuxi)
 
-<a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Wiki with more examples</a> 
+<a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Wiki</a> 
+
 
 # Examples
 
