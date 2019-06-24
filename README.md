@@ -8,12 +8,11 @@ The original inspiration behind YUXI was to create a set of methodologies, toolc
 
 # Examples
 
-YUXI has 3 examples included with it.
-1.Hello World
-2.Lights and Buttons
-3.SenseHat Letters
+YUXI has 3 examples included to get you started and to get a sense of what you can do with it.
+1. Hello World  
+2. Lights and Buttons  
+3. SenseHat Letters  
 
-<a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
 
 <img src="https://github.com/Sensorycc/YUXI-Mixed-Reality-Hardware-Toolkit/blob/master/Assets/Screenshots/YUXI_Hello_World.gif" width="900">
 
