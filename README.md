@@ -2,7 +2,7 @@
 
 The original inspiration behind YUXI was to create a set of methodologies, toolchains, and examples to mix physical computing with VR/AR/MR projects. The project examples currently a Raspberry Pi and breadboard mounted to a trackable base plate. From there we use <a href="http://www.spacebrew.cc">Spacebrew</a> to connect the inputs and outputs to Unity. 
 
-[Getting Started](Getting_Started.md)
+[Getting Started](https://www.sensory.cc/yuxi)
 
 YUXI has 3 example projects that it comes with and there are many more that have been documented on the <a href="https://github.com/Sensorycc/Mixed-Reality-Hardware-Toolkit/wiki">Tutorial Wiki</a>
 
